@@ -56,7 +56,7 @@ body {
     cursor: pointer;
 }
 
-.search-bar :hover {
+.search-bar input:hover {
     transform: scale(1.05);
 }
 
