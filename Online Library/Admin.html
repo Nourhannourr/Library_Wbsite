@@ -25,13 +25,13 @@
         </div>
       </div>
 
-    </nav>    
+    </nav>
     <main class="container">
         <div class="search-bar">
-            <input type="text" placeholder="Search for stocks, ETFs, or bonds" >
+            <input onkeyup="search(this.value)" type="text" id="searchInput" placeholder="Search for stocks, ETFs, or bonds" >
             <i class="fas fa-search"></i>
         </div>
-         
+
 
 
 
@@ -44,7 +44,7 @@
                 <img src="Image.jpg">
             </div>
         </section>
-        
+
         <section class="dashboard">
             <a href="book_list.html" class="card card1">
                 <i class="fas fa-book"></i>
@@ -60,5 +60,6 @@
             </a>
         </section>
     </main>
+    <script src='LibrarySystemSearch.js'> </script>
 </body>
 </html>
