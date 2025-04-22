@@ -3,7 +3,6 @@
   <link rel="stylesheet" href="testt.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <i class="fas fa-home"></i> <!-- Home Icon -->
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -27,8 +26,8 @@
 
     </nav>    
     <main class="container">
-        <div class="search-bar">
-            <input type="text" placeholder="Search for stocks, ETFs, or bonds" >
+        <div  class="search-bar">
+            <input onkeyup="search(this.value)" type="text" id="searchInput" placeholder="Search for stocks, ETFs, or bonds" >
             <i class="fas fa-search"></i>
         </div>
          
@@ -56,5 +55,16 @@
             </a>
         </section>
     </main>
+    <button id="showAlert" ></button>
+    <div id="customAlert" class="alert-box" style="display: none">
+        <div class="alert-content">
+            <h2> Alert</h2>
+            <p id="text"> Book is found in the system, you can check the book list </p>
+            <button id="GoToList" class="btn"> Book List </button>
+            <button id="confirm" class="btn"> OK  </button>
+
+        </div>
+    </div>
+    <script src='LibrarySystemSearch.js'> </script>
 </body>
 </html>

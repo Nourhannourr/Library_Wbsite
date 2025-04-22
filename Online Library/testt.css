@@ -34,9 +34,9 @@ body {
   color:white;
 }
 .profile-icon img {
-  width: 100%; 
+  width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -76,11 +76,11 @@ body {
   font-size: 16px;
   max-width: 600px;
   border-radius: 25px;
-  
+
 }
 
 .search-bar input::placeholder {
-  color: rgb(225, 225, 235); 
+  color: rgb(225, 225, 235);
 }
 
 
@@ -108,19 +108,19 @@ body {
 .Intro-Image {
   width: 500px;
   height: 300px;
-  
+
   background: #001;
   margin-left: 10px;
 
   display: flex;
-  justify-content: right; 
-  align-items: center; 
+  justify-content: right;
+  align-items: center;
   overflow: hidden;
 }
 
 .Intro-Image img {
   display: flex;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   border-radius: 10px;
 }
@@ -176,3 +176,62 @@ body {
   margin-bottom: 10px;
   display: block;
 }
+
+
+
+/*alert box*/
+#customAlert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 450px;
+  background: #1f6c9a;
+  color: white;
+  margin-left : 500px;
+  border-radius: 10px;
+  background: linear-gradient(#123, rgba(75, 75, 193, 0.99));
+
+}
+.customAlert p {
+  color: white;
+}
+.btn{
+  padding: 10px 20px;
+  background: whitesmoke;
+  border: none;
+  border-radius: 10px;
+
+}
+.btn:hover{
+  background: rgb(82, 82, 159);
+  cursor: pointer;
+}
+.alert-box{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  justify-content: center;
+}
+.alert-content{
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+}
+.alert-content h2{
+  color: #010105;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.alert-content p{
+  color: #010105;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.alert-content {}
