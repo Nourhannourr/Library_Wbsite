@@ -27,22 +27,6 @@ const tbody = document.getElementById('tbody');
 // Original book data
 let allBooks = getBooksFromLocalStorage();
 
-// Filtering form handler
-// filterForm.addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     const titleFilter = titleInput.value.toLowerCase();
-//     const authorFilter = authorInput.value.toLowerCase();
-//     const categoryFilter = categorySelect.value;
-//
-//     const filteredBooks = allBooks.filter(book => {
-//         const MTitle = book.title.toLowerCase().includes(titleFilter);
-//         const MAuthor = book.author.toLowerCase().includes(authorFilter);
-//         const MCategory = categoryFilter === '' || book.category === categoryFilter;
-//         return MTitle && MAuthor && MCategory;
-//     });
-//
-//     showBooks(filteredBooks);
-// });
 filterForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
