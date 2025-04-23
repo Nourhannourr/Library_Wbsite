@@ -12,9 +12,9 @@
       <div class="logo">Library</div>
       <ul class="nav">
         <li><a href="dash.html">Dashboard</a></li>
-        <li><a href="#">Books</a></li>
-        <li><a href="#">Users</a></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="userprofile.html">Profile</a></li>
+        <li><a href="bookauthors.html">Authors</a></li>
+        <li><a href="book_list.html">Books</a></li>
       </ul>
     </aside>
 
@@ -23,27 +23,16 @@
         <h1>User Profile</h1>
         <div class="user-info">
           <p><strong>Name:</strong> USER</p>
-          <p><strong>Email:</strong> User@example.com</p>
+          <p><strong>Email:</strong> user@example.com</p>
         </div>
 
-        <h2>Some Borrowed Books</h2>
-        <div class="borrowed-books">
-          <div class="book-card">
-            <h3>1984</h3>
-            <p><strong>Author:</strong> George Orwell</p>
-            <p><strong>Return Date:</strong> 2025-04-20</p>
-            <button class="return-btn">Return Book</button>
-          </div>
-
-          <div class="book-card">
-            <h3>To Kill a Mockingbird</h3>
-            <p><strong>Author:</strong> Harper Lee</p>
-            <p><strong>Return Date:</strong> 2025-04-25</p>
-            <button class="return-btn">Return Book</button>
-          </div>
+        <h2>My Borrowed Books</h2>
+        <div class="borrowed-books" id="borrowedBooksContainer">
         </div>
       </div>
     </main>
   </div>
+
+  <script src="userprofile.js"></script>
 </body>
 </html>

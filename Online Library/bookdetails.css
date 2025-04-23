@@ -99,5 +99,15 @@ body {
 }
 
 .borrow-btn:hover {
-  background-color: #eab308;
+  background-color: #846d26;
+}
+
+
+
+.state {
+  color: green;       
+}
+
+.state.unavailable {
+  color: red;        
 }

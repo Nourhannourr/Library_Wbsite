@@ -7,14 +7,15 @@
   <link rel="stylesheet" href="bookdetails.css"/>
 </head>
 <body>
+
   <div class="container">
     <aside class="sidebar">
       <div class="logo">Library</div>
       <ul class="nav">
         <li><a href="dash.html">Dashboard</a></li>
-        <li><a href="#">Books</a></li>
-        <li><a href="#">Users</a></li>
-        <li><a href="#">Settings</a></li>
+        <li><a href="userprofile.html">Profile</a></li>
+        <li><a href="bookauthors.html">Authors</a></li>
+        <li><a href="book_list.html">Books</a></li>
       </ul>
     </aside>
 
@@ -24,7 +25,7 @@
           <img src="movie.jpg" alt="Book Cover">
         </div>
         <div class="book-info">
-          <h1>The Great Gatsby</h1>
+          <h1 class="book-title">The Great Gatsby</h1>
           <h3>by F. Scott Fitzgerald</h3>
           <p class="summary">
             A novel set in the Jazz Age that tells the story of the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan.
@@ -32,11 +33,16 @@
           <div class="meta">
             <span><strong>Genre:</strong> Fiction</span>
             <span><strong>Language:</strong> English</span>
+            <span><strong>Status:</strong> 
+              <strong id="status" class="state available">Available</strong>
+            </span>
+            <button id="borrowBtn" class="borrow-btn">Borrow</button>
           </div>
-          <button class="borrow-btn">Borrow</button>
         </div>
       </div>
     </main>
   </div>
+
+  <script src="book_detailes.js"></script>
 </body>
 </html>
