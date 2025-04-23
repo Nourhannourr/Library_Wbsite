@@ -12,13 +12,14 @@ let searchInput = document.getElementById('searchInput');
 //     category: 'Fantasy',
 // }));
 console.log("added to localStorage");
+
 function search(value) {
-    searchInput.addEventListener('keyup',(e)=>{
-    })
     if(localStorage.length == 0){
         console.log("empty")
         return;
     }
+
+
     let found=false;
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
@@ -48,5 +49,10 @@ confirmBtn.addEventListener('click', () => {
 goToList.addEventListener('click', () => {
     window.open('book_list.html');
 });
+searchInput.addEventListener('keyup',(e)=>{
+    if (e.key === 'Enter') {
+        search(searchInput.value);
+    }
+})
 
 
