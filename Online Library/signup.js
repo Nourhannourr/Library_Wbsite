@@ -7,6 +7,7 @@ form.addEventListener("submit", function (e) {
 
   let sname = document.getElementById("usname").value;
   let passw = document.getElementById("pass").value;
+  let emaiil = document.getElementById("eemaill").value;
 
   if (pass.value != conpas.value) {
     alert("Sorry, the confirmation of password is wrong, please try again");
@@ -15,7 +16,7 @@ form.addEventListener("submit", function (e) {
   }
 
   let users = JSON.parse(localStorage.getItem("users")) || [];
-  users.push({ username: sname, password: passw });
+  users.push({ username: sname, password: passw, email: emaiil});
   localStorage.setItem("users", JSON.stringify(users));
   window.location.href = "index.html";
 });
