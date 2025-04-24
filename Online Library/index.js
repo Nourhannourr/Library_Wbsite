@@ -40,6 +40,7 @@ function handleUserLogin() {
   let found = users.find(u => u.username === nname.value && u.password === pass.value);
 
   if (found && user.checked) {
+    localStorage.setItem("currentUserEmail", found.email);
     window.location.href = "indexx.html";
   } else {
     alert("Sorry, your username or password is wrong");
